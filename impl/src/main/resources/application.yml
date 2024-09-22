@@ -8,9 +8,9 @@ spring:
     change-log: classpath:database-social.network-changelog.xml
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/skillbox
-    username: social.network
-    password: social.network
+    url: jdbc:postgresql://${HOST:localhost}:${PORT:5435}/${DB_NAME:estimates}
+    username: ${DB_USERNAME:estimates}
+    password: ${DB_PASSWORD:estimates}
     driverClassName: org.postgresql.Driver
 
   jpa:
